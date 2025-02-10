@@ -3,22 +3,22 @@ import ReactDOM from "react-dom/client";
 import "../../styles/index.css";
 
 const TrafficLight = () => {
-  const [color, setColor] = useState("red");
+  const [color, setColor] = useState("rojo");
 
   return (
     <div className="container">
       <div className="traffic-light">
         <div
-          className={`light red ${color === "red" ? "glow" : ""}`}
-          onClick={() => setColor("red")}
+          className={`luz roja ${color === "rojo" ? "resplandor" : ""}`}
+          onClick={() => setColor("rojo")}
         ></div>
         <div
-          className={`light yellow ${color === "yellow" ? "glow" : ""}`}
-          onClick={() => setColor("yellow")}
+          className={`luz amarilla ${color === "amarillo" ? "resplandor" : ""}`}
+          onClick={() => setColor("amarillo")}
         ></div>
         <div
-          className={`light green ${color === "green" ? "glow" : ""}`}
-          onClick={() => setColor("green")}
+          className={`luz verde ${color === "verde" ? "resplandor" : ""}`}
+          onClick={() => setColor("verde")}
         ></div>
       </div>
     </div>
